@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider Carousel</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/1.jpg" alt="1"></div>
+                <div class="swiper-slide"><img src="images/2.jpg" alt="2"></div>
+                <div class="swiper-slide"><img src="images/3.jpg" alt="3"></div>
+                <div class="swiper-slide"><img src="images/4.jpg" alt="4"></div>
+                <div class="swiper-slide"><img src="images/5.jpg" alt="5"></div>
+                <div class="swiper-slide"><img src="images/6.jpg" alt="6"></div>
+            </div>
+
+            <div class="swiper-button-prev prev"></div>
+            <div class="swiper-button-next next"></div>
+
+        </div>
+    </div>
+
+        <script 
+            src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js">
+        </script>
+        <script>
+            const swiper = new Swiper('.swiper', {
+                loop: true,
+
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+
+
+            });
+
+        </script>
+</body>
+
+</html>

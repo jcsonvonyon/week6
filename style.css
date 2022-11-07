@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+
+}
+
+.swiper{
+    width: 80%;
+    height: 100%;
+}
+
+.swiper-slide img{
+    width: 100%;
+}
+
+.prev,
+.next{
+    opacity: 0;
+}
+
+.prev:hover,
+.next:hover{
+    
+    opacity: 1;
+}
